@@ -1,0 +1,69 @@
+# compile verilog/system verilog design source files
+verilog fifo_generator_v13_2_5  --include "../../../../redpitaya.srcs/sources_1/bd/system/ipshared/ec67/hdl" --include "../../../../redpitaya.srcs/sources_1/bd/system/ipshared/6b56/hdl" --include "C:/Vivado/2020.1/data/xilinx_vip/include" \
+"c:/RedPitaya-FPGA-master/RedPitaya-FPGA-master/prj/V0.94/project/redpitaya.srcs/sources_1/ip/asg_dat_fifo/simulation/fifo_generator_vlog_beh.v" \
+"c:/RedPitaya-FPGA-master/RedPitaya-FPGA-master/prj/V0.94/project/redpitaya.srcs/sources_1/ip/asg_dat_fifo/hdl/fifo_generator_v13_2_rfs.v" \
+
+verilog xil_defaultlib  --include "../../../../redpitaya.srcs/sources_1/bd/system/ipshared/ec67/hdl" --include "../../../../redpitaya.srcs/sources_1/bd/system/ipshared/6b56/hdl" --include "C:/Vivado/2020.1/data/xilinx_vip/include" \
+"c:/RedPitaya-FPGA-master/RedPitaya-FPGA-master/prj/V0.94/project/redpitaya.srcs/sources_1/ip/asg_dat_fifo/sim/asg_dat_fifo.v" \
+"c:/RedPitaya-FPGA-master/RedPitaya-FPGA-master/prj/V0.94/project/redpitaya.srcs/sources_1/ip/sync_fifo/sim/sync_fifo.v" \
+
+verilog fifo_generator_v13_2_5  --include "../../../../redpitaya.srcs/sources_1/bd/system/ipshared/ec67/hdl" --include "../../../../redpitaya.srcs/sources_1/bd/system/ipshared/6b56/hdl" --include "C:/Vivado/2020.1/data/xilinx_vip/include" \
+"../../../../redpitaya.srcs/sources_1/bd/system/ipshared/276e/simulation/fifo_generator_vlog_beh.v" \
+"../../../../redpitaya.srcs/sources_1/bd/system/ipshared/276e/hdl/fifo_generator_v13_2_rfs.v" \
+
+verilog xil_defaultlib  --include "../../../../redpitaya.srcs/sources_1/bd/system/ipshared/ec67/hdl" --include "../../../../redpitaya.srcs/sources_1/bd/system/ipshared/6b56/hdl" --include "C:/Vivado/2020.1/data/xilinx_vip/include" \
+"../../../../redpitaya.ip_user_files/bd/system/ip/system_axi_protocol_converter_0_0/sim/system_axi_protocol_converter_0_0.v" \
+"../../../../redpitaya.ip_user_files/bd/system/ip/system_axi_register_slice_0_0/sim/system_axi_register_slice_0_0.v" \
+"../../../../redpitaya.ip_user_files/bd/system/ip/system_processing_system7_0/sim/system_processing_system7_0.v" \
+"../../../../redpitaya.ip_user_files/bd/system/ip/system_xadc_0/system_xadc_0.v" \
+"../../../../redpitaya.ip_user_files/bd/system/ip/system_xlconstant_0/sim/system_xlconstant_0.v" \
+"../../../../redpitaya.ip_user_files/bd/system/sim/system.v" \
+"../../../../redpitaya.srcs/sources_1/imports/RedPitaya-FPGA-master/rtl/classic/axi_master.v" \
+"../../../../redpitaya.srcs/sources_1/imports/RedPitaya-FPGA-master/rtl/classic/axi_wr_fifo.v" \
+"../../../../redpitaya.srcs/sources_1/imports/RedPitaya-FPGA-master/rtl/divide.v" \
+"../../../../redpitaya.srcs/sources_1/imports/RedPitaya-FPGA-master/prj/V0.94/rtl/osc_filter.v" \
+"../../../../redpitaya.srcs/sources_1/imports/RedPitaya-FPGA-master/rtl/rand_lfsr.v" \
+"../../../../redpitaya.srcs/sources_1/imports/RedPitaya-FPGA-master/rtl/classic/red_pitaya_ams.v" \
+"../../../../redpitaya.srcs/sources_1/imports/RedPitaya-FPGA-master/rtl/classic/red_pitaya_daisy.v" \
+"../../../../redpitaya.srcs/sources_1/imports/RedPitaya-FPGA-master/rtl/classic/red_pitaya_daisy_rx.v" \
+"../../../../redpitaya.srcs/sources_1/imports/RedPitaya-FPGA-master/rtl/classic/red_pitaya_daisy_test.v" \
+"../../../../redpitaya.srcs/sources_1/imports/RedPitaya-FPGA-master/rtl/classic/red_pitaya_daisy_tx.v" \
+"../../../../redpitaya.srcs/sources_1/imports/RedPitaya-FPGA-master/rtl/classic/red_pitaya_hk.v" \
+"../../../../redpitaya.srcs/sources_1/imports/RedPitaya-FPGA-master/rtl/classic/red_pitaya_pid.v" \
+"../../../../redpitaya.srcs/sources_1/imports/RedPitaya-FPGA-master/rtl/classic/red_pitaya_pid_block.v" \
+"../../../../redpitaya.srcs/sources_1/imports/RedPitaya-FPGA-master/rtl/classic/rp_acq_bram.v" \
+"../../../../redpitaya.srcs/sources_1/imports/RedPitaya-FPGA-master/rtl/classic/rp_adc_trig.v" \
+"../../../../redpitaya.srcs/sources_1/imports/RedPitaya-FPGA-master/rtl/classic/rp_axi_sm.v" \
+"../../../../redpitaya.srcs/sources_1/imports/RedPitaya-FPGA-master/rtl/classic/rp_bram_sm.v" \
+"../../../../redpitaya.srcs/sources_1/imports/RedPitaya-FPGA-master/rtl/classic/rp_decim.v" \
+"../../../../redpitaya.srcs/sources_1/imports/RedPitaya-FPGA-master/rtl/classic/rp_delay.v" \
+"../../../../redpitaya.srcs/sources_1/imports/RedPitaya-FPGA-master/rtl/classic/rp_ext_trig.v" \
+"../../../../redpitaya.srcs/sources_1/imports/RedPitaya-FPGA-master/rtl/classic/rp_scope_calib.v" \
+"../../../../redpitaya.srcs/sources_1/imports/RedPitaya-FPGA-master/rtl/classic/rp_scope_cfg.v" \
+"../../../../redpitaya.srcs/sources_1/imports/RedPitaya-FPGA-master/rtl/classic/rp_scope_com.v" \
+"../../../../redpitaya.srcs/sources_1/imports/RedPitaya-FPGA-master/rtl/classic/rp_trig_src.v" \
+
+sv xil_defaultlib  --include "../../../../redpitaya.srcs/sources_1/bd/system/ipshared/ec67/hdl" --include "../../../../redpitaya.srcs/sources_1/bd/system/ipshared/6b56/hdl" --include "C:/Vivado/2020.1/data/xilinx_vip/include" \
+"../../../../redpitaya.srcs/sources_1/imports/RedPitaya-FPGA-master/rtl/interface/axi4_if.sv" \
+"../../../../redpitaya.srcs/sources_1/imports/RedPitaya-FPGA-master/rtl/axi4_slave.sv" \
+"../../../../redpitaya.srcs/sources_1/imports/RedPitaya-FPGA-master/rtl/classic/axi_rd_burst.sv" \
+"../../../../redpitaya.srcs/sources_1/imports/RedPitaya-FPGA-master/rtl/interface/axi_sys_if.sv" \
+"../../../../redpitaya.srcs/sources_1/imports/RedPitaya-FPGA-master/rtl/freq_meter.sv" \
+"../../../../redpitaya.srcs/sources_1/imports/RedPitaya-FPGA-master/rtl/interface/gpio_if.sv" \
+"../../../../redpitaya.srcs/sources_1/imports/RedPitaya-FPGA-master/rtl/classic/red_pitaya_asg.sv" \
+"../../../../redpitaya.srcs/sources_1/imports/RedPitaya-FPGA-master/rtl/classic/red_pitaya_asg_ch.sv" \
+"../../../../redpitaya.srcs/sources_1/imports/RedPitaya-FPGA-master/rtl/classic/red_pitaya_pdm.sv" \
+"../../../../redpitaya.srcs/sources_1/imports/RedPitaya-FPGA-master/rtl/red_pitaya_pll.sv" \
+"../../../../redpitaya.srcs/sources_1/imports/RedPitaya-FPGA-master/prj/V0.94/rtl/red_pitaya_ps.sv" \
+"../../../../redpitaya.srcs/sources_1/imports/RedPitaya-FPGA-master/rtl/classic/rp_asg_axi.sv" \
+"../../../../redpitaya.srcs/sources_1/imports/RedPitaya-FPGA-master/rtl/sys_bus_cdc.sv" \
+"../../../../redpitaya.srcs/sources_1/imports/RedPitaya-FPGA-master/rtl/interface/sys_bus_if.sv" \
+"../../../../redpitaya.srcs/sources_1/imports/RedPitaya-FPGA-master/rtl/sys_bus_interconnect.sv" \
+"../../../../redpitaya.srcs/sources_1/imports/RedPitaya-FPGA-master/rtl/sys_bus_stub.sv" \
+"../../../../redpitaya.srcs/sources_1/imports/RedPitaya-FPGA-master/prj/V0.94/rtl/red_pitaya_top.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

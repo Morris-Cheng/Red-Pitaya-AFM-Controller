@@ -1,0 +1,16 @@
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 7a3441740e644ffc80ed47a2afa741d6 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_tb_behav xil_defaultlib.top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/RedPitaya-FPGA-master/RedPitaya-FPGA-master/prj/v0.94/project/redpitaya.srcs/sources_1/new/signal_multiply.v" Line 1. Module signal_multiply doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/RedPitaya-FPGA-master/RedPitaya-FPGA-master/prj/v0.94/project/redpitaya.srcs/sources_1/new/signal_multiply.v" Line 1. Module signal_multiply doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.signal_multiply
+Compiling module xil_defaultlib.top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_tb_behav

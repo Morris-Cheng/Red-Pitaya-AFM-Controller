@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sat Jul  4 14:44:33 2026
+# Process ID: 8416
+# Current directory: C:/RedPitaya-FPGA-master/RedPitaya-FPGA-master/prj/v0.94/project/redpitaya.runs/fifo_generator_tube_synth_1
+# Command line: vivado.exe -log fifo_generator_tube.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fifo_generator_tube.tcl
+# Log file: C:/RedPitaya-FPGA-master/RedPitaya-FPGA-master/prj/v0.94/project/redpitaya.runs/fifo_generator_tube_synth_1/fifo_generator_tube.vds
+# Journal file: C:/RedPitaya-FPGA-master/RedPitaya-FPGA-master/prj/v0.94/project/redpitaya.runs/fifo_generator_tube_synth_1\vivado.jou
+#-----------------------------------------------------------
+source fifo_generator_tube.tcl -notrace
