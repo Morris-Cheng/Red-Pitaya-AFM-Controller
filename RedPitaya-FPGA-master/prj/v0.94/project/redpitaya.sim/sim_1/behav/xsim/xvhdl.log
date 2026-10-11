@@ -1,0 +1,2 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/RedPitaya-FPGA-master/RedPitaya-FPGA-master/prj/v0.94/project/redpitaya.srcs/sources_1/ip/mult_gen_0_1/sim/mult_gen_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mult_gen_0'
