@@ -6,11 +6,9 @@ Starting static elaboration
 Pass Through NonSizing Optimizer
 Completed static elaboration
 Starting simulation data flow analysis
-WARNING: [XSIM 43-4099] "C:/RedPitaya-FPGA-master/RedPitaya-FPGA-master/prj/v0.94/project/redpitaya.srcs/sources_1/new/signal_multiply.v" Line 1. Module signal_multiply doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/RedPitaya-FPGA-master/RedPitaya-FPGA-master/prj/v0.94/project/redpitaya.srcs/sources_1/new/signal_multiply.v" Line 1. Module signal_multiply doesn't have a timescale but at least one module in design has a timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.signal_multiply
+Compiling module xil_defaultlib.biquad_section(B0=34,B1=68,B2=34...
 Compiling module xil_defaultlib.top_tb
 Compiling module xil_defaultlib.glbl
 Built simulation snapshot top_tb_behav

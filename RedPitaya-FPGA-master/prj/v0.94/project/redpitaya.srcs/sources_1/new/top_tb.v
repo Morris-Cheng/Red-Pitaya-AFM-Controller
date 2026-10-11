@@ -21,29 +21,60 @@
 
 
 module top_tb();
+    // Global clock
     reg adc_clk = 0;
-    
-    reg signed [13:0] dsp_i_tube = 10;
-    reg signed [13:0] dsp_i_stack = 100;
-    reg dac_rst = 0;
-    wire signed [13:0] dsp_o_tube;
-    
-    signal_multiply multiply(
-    .input_1(dsp_i_tube),
-    .input_2(dsp_i_stack),
-    .clk_i(adc_clk),
-    .reset_i(dac_rst),
-    .output_1(dsp_o_tube)
-);
-    
     always #5 adc_clk = ~adc_clk;
     
+    reg reset = 1;
+    reg signed [13:0] x_i = 0;
+    wire signed [13:0] y_o;
+    
+    biquad_section #(
+        .B0(34),
+        .B1(68),
+        .B2(34),
+        .A1(-1073360183),
+        .A2(536489407),
+        .shift(29)
+    ) test_section (
+        .clk_i(adc_clk),
+        .reset_i(reset),
+        .x_i(x_i),
+        .y_o(y_o)
+    );
+    
+//    reg signed [13:0] sine_mem [0:999];
+//    integer sine_index;
+
+//    // Load MATLAB-generated sine wave
+//    initial begin
+//        $readmemh("sine.mem", sine_mem);
+//        sine_index = 0;
+//    end
+    
+//    always @(posedge adc_clk) begin
+//        if (!reset) begin
+//            sine_index <= 0;
+//            x_i <= 0;
+//        end
+//        else begin
+//            x_i <= sine_mem[sine_index];
+
+//            if (sine_index < 999)
+//                sine_index <= sine_index + 1;
+//            else
+//                sine_index <= 0;
+//        end
+//    end
+    
     initial begin
-        #5;
-        dac_rst = 1;
-        #10;
-        dac_rst = 0;
-        #100;
+        @(posedge adc_clk);
+        reset <= 0;
+        @(posedge adc_clk);
+        reset <= 1;
+        @(posedge adc_clk);
+        x_i <= 8000;
+        #999999;
         $finish;
     end
 endmodule

@@ -700,34 +700,17 @@ red_pitaya_asg i_asg (
 ////////////////////////////////////////////////////////////////////////////////
 red_pitaya_dsp_tube tube_filter (
     .clk_i(adc_clk),    //clock
-    .reset_i(dac_rst), //reset signal
+    .reset_i(adc_rstn), //reset signal
     .dsp_i(dsp_i_tube), //dsp input signal
     .dsp_o(dsp_o_tube)  //dsp output signal
 );
 
 red_pitaya_dsp_stack stack_filter (
     .clk_i(adc_clk),   //clock
-    .reset_i(dac_rst), //reset signal
+    .reset_i(adc_rstn), //reset signal
     .dsp_i(dsp_i_tube), //dsp input signal  CHANGE: to dsp_i_stack in the future
     .dsp_o(dsp_o_stack)  //dsp output signal
 );
-
-////////////////////////////////////////////////////////////////////////////////
-//  SIgnal math DEBUG
-////////////////////////////////////////////////////////////////////////////////
-signal_multiply multiply(
-    .input_1(dsp_i_tube),
-    .input_2(dsp_i_stack),
-    .clk_i(adc_clk),
-    .reset_i(dac_rst),
-    .output_1(dsp_o_tube)
-);
-
-//signal_divide divide(
-//    .input_1(dsp_i_tube),
-//    .input_2(dsp_i_stack),
-//    .output_1(dsp_o_stack)
-//);
 
 ////////////////////////////////////////////////////////////////////////////////
 //  Data register modules
